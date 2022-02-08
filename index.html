@@ -1,0 +1,24 @@
+<html>
+    <head>
+     <script>
+         var updateName =["Daddy","Mummy","Yash"];
+         var updateImage =["Daddy.jpg","Mom.jpg","Yash.jpg"];
+         var index = 0;   
+         function update(){
+            document.getElementById("imgPhotoFrame").src=updateImage[index];
+            document.getElementById("imgName").innerHTML=updateName[index];
+            index = index + 1;
+         }
+     </script>
+    </head>
+    <body>
+    <h1>My Family Book</h1>
+    <div style="border :100px; border-color: red; ">
+        <img id="imgPhotoFrame" src="FamilyBookimg.png"></img>    
+    </div>
+    <div>
+        <h1 id="imgName">My Family Book</h1>
+    </div>
+    <button id="btnNext" onclick="update()"  >Click here to go to next</button>
+    </body>
+</html>
